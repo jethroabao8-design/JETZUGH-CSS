@@ -1,0 +1,107 @@
+/* ===== SECTION A: DO NOT EDIT ===== */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f6fb; color: #222; font-size: 14px; }
+header { background: #1f3864; color: #fff; padding: 14px 20px; }
+.logo { font-size: 22px; font-weight: bold; }
+.menu a { color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; display: block; }
+.layout { padding: 0; }
+main, aside { background: #fff; border: 1px solid #dde3ee; padding: 16px; }
+h1 { font-size: 20px; margin: 0 0 8px; }
+h2 { font-size: 13px; margin: 16px 0 8px; color: #1f3864; }
+h3 { font-size: 13px; margin: 0 0 8px; color: #1f3864; }
+button { background: #2e75b6; color: #fff; border: 0; padding: 9px 20px; border-radius: 4px; font-size: 13px; }
+.card { background: #e8f0fe; border: 1px solid #8ab4f8; padding: 12px; width: 180px; }
+.card strong, .card span { display: block; }
+.card span { margin-top: 4px; color: #444; font-size: 13px; }
+.box-a, .box-b { height: 200px; background: #fafafa; border: 2px solid #333; }
+.item { background: #c5c5c4; font-weight: bold; padding: 10px 14px; font-size: 13px; }
+.status { background: #e6f4ea; color: #1e7e34; font-weight: bold; padding: 6px 10px; border-left: 4px solid #1e7e34; }
+.update { background: #fff1cc; border-left: 4px solid #ffab40; padding: 10px 12px; }
+footer { background: #1f3864; color: #fff; padding: 14px 20px; font-size: 13px; }
+/* ===== END SECTION A ===== */
+
+/* ===== SECTION B: YOUR WORK (edit only below this line) ===== */
+
+/* TASK 1: Site Header (selectors: header, .menu) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* TASK 2: Profile Sidebar + Main Content (selectors: .layout, main, aside) */
+.layout {
+  display: flex;
+  gap: 18px;
+}
+
+main {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+  margin-left: 18px;
+}
+
+/* TASK 3: Project Filter Buttons (selector: .button-group) */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* TASK 4: Project Card Grid (selector: .cards) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.card {
+  width: auto;
+  min-height: 90px;
+}
+
+/* TASK 5: Highlights and Timeline Strips (selectors: .box-a, .box-b) */
+.box-a,
+.box-b {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  padding: 12px;
+}
+
+.box-a .item,
+.box-b .item {
+  display: flex;
+  flex: 1;
+  min-width: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* TASK 6: Recent Activity Feed (selector: .updates) */
+.updates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TASK 7: Footer (selector: footer) */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BONUS: Add exactly one declaration to the .layout rule */
+
